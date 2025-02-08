@@ -9,7 +9,7 @@ const Home = () => {
   const userAuth=async()=>{
     const token = localStorage.getItem("token");
     if(token){
-    let api= 'http://localhost:8000/user/userauth';
+    let api= 'https://jwt-authentication-22bp.onrender.com/user/userauth';
     try {
       const response = await axios.post(api,null,{headers:{"auth-token":token}})
       localStorage.setItem("username",response.data.name);

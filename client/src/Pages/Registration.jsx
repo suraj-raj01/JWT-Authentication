@@ -14,7 +14,7 @@ const Registration = () => {
     }
 
     const handleSubmit=async()=>{
-        let api='http://localhost:8000/user/registraion';
+        let api='https://jwt-authentication-22bp.onrender.com/user/registraion';
         try {
             const response = await axios.post(api,input);
             console.log(response.data);
